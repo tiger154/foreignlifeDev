@@ -1,0 +1,1 @@
+index front! the number got from controller is {{ $number }} !
