@@ -12,6 +12,7 @@ namespace foreignlifeDev\Http\Controllers;
 class FrontController extends Controller {
 
     public function index() {
+        echo 1;
         return view('front.index', ['number' => 123]);
     }
 } 
