@@ -6,7 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 PostsController	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^class PostsController extends Controller$/;"	class	line:8
 index	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function index()$/;"	function	line:15
-posts	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $posts = Posts::orderBy('created_at','desc')->paginate(2);$/;"	variable	line:17
+posts	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $posts = Posts::orderBy('created_at','desc')->paginate(3);$/;"	variable	line:17
 create	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function create()$/;"	function	line:26
 store	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function store(Request $request)$/;"	function	line:37
 data	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $data = $request->only(['title','body']);$/;"	variable	line:39
