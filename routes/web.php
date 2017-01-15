@@ -17,6 +17,7 @@ Route::get('/', function () {
 */
 Route::get('/', 'FrontController@index');
 
+Route::resource('posts','PostsController');
 
 Route::get('/db', function () {
     // insert check
