@@ -14,7 +14,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Posts::all();
+        $posts = Posts::orderBy('created_at','desc')->paginate(2);
         return view('posts.index', compact('posts'));
     }
 
@@ -73,7 +73,10 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->only('title','body');
+        $post = Posts::find($id);
+        $post->update($data);
+        return \Redirect::route('posts.index');
     }
 
     /**
@@ -84,6 +87,7 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Posts::destroy($id);
+        return \Redirect::to('/posts');
     }
 }
