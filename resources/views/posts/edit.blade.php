@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2>Create post</h2>
-    {!! Form::open(array('route' => 'posts.store')) !!}
+    <h2>Edit post</h2>
+    {!! Form::model($post, array('route' => array('posts.update', $post->id), 'method' => 'put' )) !!}
         <div class="form-group">
             {!! Form::label('title') !!}
             {!! Form::text('title', null, array('class' => 'form-control')) !!}

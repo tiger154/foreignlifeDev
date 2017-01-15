@@ -3,6 +3,7 @@
 namespace foreignlifeDev\Http\Controllers;
 
 use Illuminate\Http\Request;
+use foreignlifeDev\Posts;
 
 class PostsController extends Controller
 {
@@ -13,7 +14,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Posts::all();
+        return view('posts.index', compact('posts'));
     }
 
     /**
@@ -34,7 +36,9 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only(['title','body']);
+        $post = Posts::create($data);
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -56,7 +60,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Posts::find($id);
+        return view('posts.edit', compact('post'));
     }
 
     /**
