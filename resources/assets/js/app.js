@@ -1,7 +1,11 @@
 /**
+ * I't using ES5
  * This is my first module import from
  */
+
+window.first = require('./modules/first');
 window.common = require('./modules/module1');
+common.callFirstFromModule1();
 
 /**
  * First we will load all of this project's JavaScript dependencies which
