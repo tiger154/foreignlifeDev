@@ -35,7 +35,7 @@
                 itemClass : 'item',
                 activeClass : 'active',
                 items: [
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'We know foreign life not easy'},
+                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'We know foreign life is not easy'},
                     {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Caption2'},
                     {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Caption3'}
                 ]
