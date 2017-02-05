@@ -11,12 +11,22 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">QnA</a></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#qna">QnA</a></li>
           <li><a href="#about">Community</a></li>
           <li><a href="#contact">Rent</a></li>
           <li><a href="#contact">Study</a></li>
           <li><a href="#contact">Shop</a></li>
         </ul>
+        <form class="navbar-form navbar-right login-form">
+           <div class="form-group">
+             <input type="text" placeholder="Email" class="form-control login-input">
+           </div>
+           <div class="form-group">
+             <input type="password" placeholder="Password" class="form-control login-input">
+           </div>
+           <button type="submit" class="btn btn-success login-input">Sign in</button>
+         </form>
       </div><!--/.nav-collapse -->
     </div>
 </nav>

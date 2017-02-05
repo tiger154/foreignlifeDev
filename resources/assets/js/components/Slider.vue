@@ -13,7 +13,7 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill"  v-bind:style="{ backgroundImage: 'url(' + item.url + ')' }"></div>
                 <div class="carousel-caption">
-                    <h2> Caption {{ (index+1) }} </h2>
+                    <h2> {{ item.caption }} </h2>
                 </div>
             </div>
         </div>
@@ -35,9 +35,9 @@
                 itemClass : 'item',
                 activeClass : 'active',
                 items: [
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg'},
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg'},
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg'}
+                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'We know foreign life not easy'},
+                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Caption2'},
+                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Caption3'}
                 ]
             }
         },
@@ -47,7 +47,7 @@
         mounted() {
             console.log('Component slider mounted.');
             $(this.$el).carousel({
-                interval : 1000* 5,
+                interval : 1000 * 10,
                 pause: "hover"
             });
         }
@@ -66,7 +66,7 @@
     }
     .fill {
         width: 100%;
-        height: 120px;
+        height: 200px;
         background-position: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain;
@@ -75,5 +75,10 @@
     }
     footer {
         margin: 50px 0;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px #141313;
     }
 </style>

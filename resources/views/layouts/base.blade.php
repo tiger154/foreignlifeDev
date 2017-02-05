@@ -23,32 +23,12 @@
           text-align: center;
         }
 
-
-        /* Main image slider */
-        .carousel,
-        .item,
-        .active {
-            height: 100%;
-        }
-
-        .carousel-inner {
-            height: 100%;
-        }
-
-        .fill {
-            width: 100%;
-            height: 120px;
-            background-position: contain;
-            -webkit-background-size: contain;
-            -moz-background-size: contain;
-            background-size: contain;
-            -o-background-size: contain;
-        }
-
-        footer {
-            margin: 50px 0;
+        .login-input{
+           font-size: 12px !important;
+           height: initial;
         }
     </style>
+    @yield('header')
   </head>
   <body>
     <div id="app">
