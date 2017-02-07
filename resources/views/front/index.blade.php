@@ -39,7 +39,7 @@
             <div class="col-sm-8 front-content-center">
                 @for ($i = 0; $i < 15; $i++)
                     <div class="row board-row">
-                        <div class="col-sm-2"><i class="fa fa-thumbs-o-up icon-user" aria-hidden="true"></i>upvote</div>
+                        <div class="col-sm-2"><i class="fa fa-thumbs-o-up icon-user" aria-hidden="true">vote</i></div>
                         <div class="col-sm-6">Hi I want to buy pre-paied phone anyone can help me? I'm living Seoul! </div>
                     </div>
                 @endfor
