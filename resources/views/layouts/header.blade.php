@@ -11,12 +11,12 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#qna">QnA</a></li>
+          <li><a href="#qna">Questions</a></li>
           <li><a href="#about">Community</a></li>
           <li><a href="#contact">Rent</a></li>
-          <li><a href="#contact">Study</a></li>
           <li><a href="#contact">Shop</a></li>
+          <li><a href="#contact">Study</a></li>
+          <li><a href="#contact">Visa</a></li>
         </ul>
         <form class="navbar-form navbar-right login-form">
            <div class="form-group">

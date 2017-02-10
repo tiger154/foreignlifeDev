@@ -27,6 +27,9 @@
            font-size: 12px !important;
            height: initial;
         }
+        .footer {
+
+        }
     </style>
     @yield('header')
   </head>
@@ -35,6 +38,7 @@
         @include('layouts.header')
         <Slider></Slider>
         @yield('content')
+        @include('layouts.footer')
     </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/app.js"></script>
