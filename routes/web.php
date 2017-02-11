@@ -12,6 +12,8 @@
 */
 
 Route::get('/', function () { return view('front/index'); });
+Route::resource('question','QuestionController');
+
 
 /****************************************************
  * Boots trap route

@@ -28,7 +28,9 @@
            height: initial;
         }
         .footer {
-
+            padding-top: 19px;
+            color: #777;
+            border-top: 1px solid #e5e5e5;
         }
     </style>
     @yield('header')
@@ -36,7 +38,6 @@
   <body>
     <div id="app">
         @include('layouts.header')
-        <Slider></Slider>
         @yield('content')
         @include('layouts.footer')
     </div>

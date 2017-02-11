@@ -22,6 +22,7 @@ require('./bootstrap');
  */
 Vue.component('Example', require('./components/Example.vue'));
 Vue.component('Slider', require('./components/Slider.vue'));
+Vue.component('Questionlist', require('./components/Questionlist.vue'));
 
 var app = new Vue({
     el: '#app',

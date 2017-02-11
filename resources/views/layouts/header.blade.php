@@ -7,11 +7,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">ForeignLife</a>
+        <a class="navbar-brand" href="/">ForeignLife</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#qna">Questions</a></li>
+          <li><a href="/question">Questions</a></li>
           <li><a href="#about">Community</a></li>
           <li><a href="#contact">Rent</a></li>
           <li><a href="#contact">Shop</a></li>
