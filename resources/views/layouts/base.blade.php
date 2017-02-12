@@ -32,6 +32,24 @@
             color: #777;
             border-top: 1px solid #e5e5e5;
         }
+        .top-search-form {
+            padding: 0.6em !important;
+        }
+        .top-search-text {
+            height: 2.6em !important;;
+            font-size: 12px !important;;
+            width: 20em !important;;
+        }
+        .top-search-submit {
+            font-size: 12px !important;;
+        }
+        .xs-top-search {
+            float: right;
+            position: relative;
+            margin-top: 8px;
+            font-size: 1.5em;
+            margin: 0.4em 0.6em 0 0;
+        }
     </style>
     @yield('header')
   </head>
