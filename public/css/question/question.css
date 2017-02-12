@@ -1,0 +1,30 @@
+.question-header {
+    height: 15em;
+    background-color: black;
+    margin-bottom: 0.5em;
+    background-image: url('/img/question/question_bg2.jpg');
+}
+.question-header-des {
+    margin: 0 auto;
+    width: 6em;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.question-search-container {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.6);
+}
+.question-search-right {
+    padding: 0px;
+}
+.question-search-label-tag {
+    background-color: white;
+}
+.question-manage {
+    margin-bottom: 1em;
+}
+/* Write */
