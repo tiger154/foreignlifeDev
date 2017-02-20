@@ -2,6 +2,7 @@
 
 namespace foreignlifeDev\Http\Controllers;
 
+use foreignlifeDev\Boards;
 use Illuminate\Http\Request;
 
 class QuestionController extends Controller
@@ -34,7 +35,9 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->only(['title','content','tags']);
+        $board = Boards::create($data);
+        return redirect()->route('question.index');
     }
 
     /**
@@ -45,7 +48,9 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        //
+        $question = Boards::find($id);
+        dump($question);
+        return view('question.view', compact('question'));
     }
 
     /**

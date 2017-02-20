@@ -27,4 +27,11 @@
 .question-manage {
     margin-bottom: 1em;
 }
+.question-manage-right {
+    padding-right: 0px;
+}
+.question-manage-right-btn {
+    text-align: right;
+    margin-left: 0.1em;
+}
 /* Write */
