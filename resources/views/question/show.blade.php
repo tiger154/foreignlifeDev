@@ -29,6 +29,15 @@
     .ad-on-show-img {
         width: 100%;
     }
+    .fa-2 {
+       font-size: 2em !important;
+    }
+    .question-show-vote-box {
+        text-align: center;
+    }
+    .question-show-vote-count {
+        margin: 8px 0;
+    }
 </style>
 
 @section('question.content')
@@ -41,7 +50,12 @@
             <img border="0" class="ad-on-show-img" src="/img/ad/show/ad_on_show1.png">
          </div>
          <div class="row question-show-content">
-            <div>{{ $question->content  }}</div>
+            <div class="col-lg-1 question-show-vote-box">
+                <i class="fa fa-chevron-circle-up fa-2" aria-hidden="true"></i>
+                <div class="question-show-vote-count"> 1 </div>
+                <i class="fa fa-chevron-circle-down fa-2" aria-hidden="true"></i>
+            </div>
+            <div class="col-lg-11">{!! nl2br(e($question->content)) !!}</div>
          </div>
         <div class="row question-show-tags">
             <label for="tagsTextInput">TAGS</label>

@@ -95,4 +95,12 @@ class QuestionController extends Controller
     {
         //
     }
+
+    /**
+     * It return data
+     */
+    public function get() {
+        $questions = Boards::orderBy('created_at','desc')->paginate(15);
+        dump($questions->items);
+    }
 }
