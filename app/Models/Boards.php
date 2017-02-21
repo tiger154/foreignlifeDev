@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev;
+namespace foreignlifeDev\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

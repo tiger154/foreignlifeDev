@@ -2,7 +2,7 @@
 
 namespace foreignlifeDev\Http\Controllers;
 
-use foreignlifeDev\Boards;
+use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
 
 class QuestionController extends Controller
@@ -49,8 +49,10 @@ class QuestionController extends Controller
     public function show($id)
     {
         $question = Boards::find($id);
-        dump($question);
-        return view('question.view', compact('question'));
+        if (is_null($question)) {
+            abort(403, 'No data found sorry');
+        }
+        return view('question.show', compact('question'));
     }
 
     /**
@@ -61,7 +63,11 @@ class QuestionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $question = Boards::find($id);
+        if (is_null($question)) {
+            abort(403, 'No data found sorry');
+        }
+        return view('question.edit', compact('question'));
     }
 
     /**
@@ -73,7 +79,10 @@ class QuestionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->only('title','content','tags');
+        $board = Boards::find($id);
+        $board->update($data);
+        return \Redirect::route('question.index');
     }
 
     /**

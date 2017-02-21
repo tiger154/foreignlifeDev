@@ -12,20 +12,19 @@
 @section('question.content')
     @include('question.nav')
     <div class="row question-form-container">
-
-        {!! Form::open(array('route' => 'question.store')) !!}
+        {!! Form::model($question, array('route' => array('question.update', $question->id), 'method' => 'put' )) !!}
             <div class="form-group">
                <label for="titleTextInput">TITLE</label>
-               <input type="text" name="title" class="form-control" id="title" aria-describedby="title" placeholder="Enter title">
+               {!! Form::text('title', null, array('class' => 'form-control','id' => 'title', 'placeholder' => 'Enter title', 'aria-describedby' => 'title')) !!}
                <small id="titleHelp" class="form-text text-muted">Type your title</small>
              </div>
              <div class="form-group">
                <label for="contentTextArea">CONTENT</label>
-               <textarea class="form-control" name="content" id="contentTextArea" rows="3"></textarea>
+               {!! Form::textarea('content', null, array('class' => 'form-control','id' => 'content', 'placeholder' => 'Content area', 'rows' => 3)) !!}
              </div>
             <div class="form-group">
                 <label for="tagsTextInput">TAGS</label>
-                <input type="text" class="form-control" name="tags" id="tags" aria-describedby="tags" placeholder="Enter tags">
+                {!! Form::text('tags', null, array('class' => 'form-control','id' => 'tags', 'placeholder' => 'Enter tags', 'aria-describedby' => 'tags')) !!}
                 <small id="tagsHelp" class="form-text text-muted">Seperate by comma e.g) tag1, tag2 </small>
             </div>
              <div class="form-group">
