@@ -13,6 +13,7 @@
 
 Route::get('/', function () { return view('front/index'); });
 Route::get('/question/get','QuestionController@get');
+//Route::post('/question/get','QuestionController@get');
 Route::resource('question','QuestionController');
 
 

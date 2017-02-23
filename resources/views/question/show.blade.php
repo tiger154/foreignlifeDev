@@ -59,7 +59,11 @@
          </div>
         <div class="row question-show-tags">
             <label for="tagsTextInput">TAGS</label>
-            <div>{{ $question->tags }}</div>
+            <div>
+                @foreach ($question->tags as $tag)
+                    {{ $tag }}
+                @endforeach
+            </div>
         </div>
          <div class="row question-show-files">
            Show File area

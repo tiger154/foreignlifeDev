@@ -24,7 +24,7 @@
              </div>
             <div class="form-group">
                 <label for="tagsTextInput">TAGS</label>
-                {!! Form::text('tags', null, array('class' => 'form-control','id' => 'tags', 'placeholder' => 'Enter tags', 'aria-describedby' => 'tags')) !!}
+                <input type="text" class="form-control" id="tags" name="tags" placeholder="tags" aria-describedby="tags"  value="{{ implode(' ', $question->tags) }}">
                 <small id="tagsHelp" class="form-text text-muted">Seperate by comma e.g) tag1, tag2 </small>
             </div>
              <div class="form-group">
