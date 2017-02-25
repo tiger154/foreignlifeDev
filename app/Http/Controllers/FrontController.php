@@ -7,12 +7,11 @@
  */
 
 namespace foreignlifeDev\Http\Controllers;
-
+use Illuminate\Http\Request;
 
 class FrontController extends Controller {
 
     public function index() {
-        echo 12;
         return view('front.index', ['number' => 123]);
     }
 }

@@ -4,6 +4,7 @@ namespace foreignlifeDev\Http\Controllers;
 
 use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class QuestionController extends Controller
 {

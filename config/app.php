@@ -178,6 +178,7 @@ return [
         // foreignlifeDev\Providers\BroadcastServiceProvider::class,
         foreignlifeDev\Providers\EventServiceProvider::class,
         foreignlifeDev\Providers\RouteServiceProvider::class,
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
 
     ],
 
@@ -228,7 +229,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-
+        'LaravelLocalization'  => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class
     ],
 
 ];

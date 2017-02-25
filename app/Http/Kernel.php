@@ -31,7 +31,7 @@ class Kernel extends HttpKernel
             \foreignlifeDev\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
-
+        'localize' => [\Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class],
         'api' => [
             'throttle:60,1',
             'bindings',

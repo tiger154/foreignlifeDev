@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () { return view('front/index'); });
-Route::get('/question/get','QuestionController@get');
-//Route::post('/question/get','QuestionController@get');
+// For locale set
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localize' ] ], function () {
+    Route::get('/', 'FrontController@index');
+    Route::match(['get','post'],'/question/get','QuestionController@get');
+    Route::resource('question','QuestionController');
+});
+
+// Default set
+Route::get('/', 'FrontController@index');
+Route::match(['get','post'],'/question/get','QuestionController@get');
 Route::resource('question','QuestionController');
 
 

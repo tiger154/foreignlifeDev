@@ -12,16 +12,16 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="/question">Questions</a></li>
-            <li><a href="#about">Community</a></li>
-            <li><a href="#contact">Rent</a></li>
-            <li><a href="#contact">Shop</a></li>
-            <li><a href="#contact">Study</a></li>
-            <li><a href="#contact">Visa</a></li>
+            <li><a href="/question">@lang('menu.question')</a></li>
+            <li><a href="#about">@lang('menu.community')</a></li>
+            <li><a href="#contact">@lang('menu.rent')</a></li>
+            <li><a href="#contact">@lang('menu.shop')</a></li>
+            <li><a href="#contact">@lang('menu.study')</a></li>
+            <li><a href="#contact">@lang('menu.visa')</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="fa fa-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+            <li><a href="#"><span class="fa fa-user"></span> @lang('menu.signup')</a></li>
+            <li><a href="#"><span class="fa fa-sign-in"></span> @lang('menu.login')</a></li>
         </ul>
         <form class="form-inline navbar-right my-2 my-lg-0 visible-lg top-search-form">
             <input class="form-control mr-sm-2 top-search-text" type="text" placeholder="Search">
