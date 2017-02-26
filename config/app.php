@@ -179,6 +179,7 @@ return [
         foreignlifeDev\Providers\EventServiceProvider::class,
         foreignlifeDev\Providers\RouteServiceProvider::class,
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        Torann\GeoIP\GeoIPServiceProvider::class,
 
     ],
 
@@ -229,7 +230,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'LaravelLocalization'  => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class
+        'LaravelLocalization'  => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
+        'GeoIP' => Torann\GeoIP\Facades\GeoIP::class,
     ],
 
 ];

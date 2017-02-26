@@ -11,6 +11,10 @@
 |
 */
 
+
+
+
+
 // For locale set
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localize' ] ], function () {
     Route::get('/', 'FrontController@index');
@@ -29,6 +33,8 @@ Route::get('/question/region', function() {
     return view('region.view', compact('title'));
 });
 Route::resource('question','QuestionController');
+
+
 
 
 

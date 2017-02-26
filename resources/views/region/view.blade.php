@@ -15,6 +15,10 @@
         </div>
         <div class="modal-region-language">
             <label>Language</label>
+            <div class="modal-region-list">
+                <div class="modal-region-item"> English </div>
+                <div class="modal-region-item"> Korean </div>
+            </div>
         </div>
     </div>
 @endsection
