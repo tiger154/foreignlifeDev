@@ -1,5 +1,24 @@
 @extends('layouts.modal.base')
+<style>
+    .modal-region-container {
+
+    }
+</style>
 @section('content')
-    1. We need to show all region options
-    2. We need to show all languages options
+    <div class="row">
+        <div class="modal-region-container">
+            <label>Region</label>
+            <div class="modal-region-list">
+                <div class="modal-region-item"> England </div>
+                <div class="modal-region-item"> Korea </div>
+            </div>
+        </div>
+        <div class="modal-region-language">
+            <label>Language</label>
+        </div>
+    </div>
+@endsection
+@section('footer')
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
 @endsection

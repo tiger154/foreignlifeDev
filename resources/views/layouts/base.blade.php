@@ -69,23 +69,22 @@
 
         $(document).ready(function(){
 
-            /**
-             *
-             * # When user click it trigger modal
-             *
-             *  1) href : path
-             *  2) data-size : default | small | wide, default value is default
-             */
-            $('.modal-link').click(function(){
-               var href = $(this).attr('href');
-               var size = $(this).data('size');
-               size = (size == null || typeof size === 'undefined') ? 'default' : size;
-
-                $('.modal-container').load(href, function(result){
-                    $('.modal-container').modal({show:true});
-                });
-                return false;
-            })
+        /**
+         *
+         * # When user click it trigger modal
+         *
+         *  1) href : path
+         *  2) data-size : default | small | wide, default value is default
+         */
+        $('.modal-link').click(function(){
+            var href = $(this).attr('href');
+            var size = $(this).data('size');
+            size = (size == null || typeof size === 'undefined') ? 'default' : size;
+            $('.modal-container').load(href, function(result){
+                $('.modal-container').modal({show:true});
+            });
+            return false;
+        })
         });
     </script>
   </body>
