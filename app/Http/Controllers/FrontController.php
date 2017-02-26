@@ -8,6 +8,7 @@
 
 namespace foreignlifeDev\Http\Controllers;
 use Illuminate\Http\Request;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class FrontController extends Controller {
 

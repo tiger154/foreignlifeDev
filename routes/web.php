@@ -15,12 +15,19 @@
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localize' ] ], function () {
     Route::get('/', 'FrontController@index');
     Route::match(['get','post'],'/question/get','QuestionController@get');
+    Route::get('/question/region', function() {
+        return view('region.view');
+    });
     Route::resource('question','QuestionController');
 });
 
 // Default set
 Route::get('/', 'FrontController@index');
 Route::match(['get','post'],'/question/get','QuestionController@get');
+Route::get('/question/region', function() {
+    $title = 'Region&Language Setting';
+    return view('region.view', compact('title'));
+});
 Route::resource('question','QuestionController');
 
 

@@ -59,12 +59,34 @@
         @include('layouts.header')
         @yield('content')
         @include('layouts.footer')
+        <div class="modal fade modal-container" tabindex="-1" role="dialog"></div>
     </div>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/app.js"></script>
     @yield('js')
     <script>
 
+        $(document).ready(function(){
+
+            /**
+             *
+             * # When user click it trigger modal
+             *
+             *  1) href : path
+             *  2) data-size : default | small | wide, default value is default
+             */
+            $('.modal-link').click(function(){
+               var href = $(this).attr('href');
+               var size = $(this).data('size');
+               size = (size == null || typeof size === 'undefined') ? 'default' : size;
+
+                $('.modal-container').load(href, function(result){
+                    $('.modal-container').modal({show:true});
+                });
+                return false;
+            })
+        });
     </script>
   </body>
 </html>

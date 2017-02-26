@@ -5,6 +5,7 @@ namespace foreignlifeDev\Http\Controllers;
 use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class QuestionController extends Controller
 {
@@ -103,7 +104,6 @@ class QuestionController extends Controller
     public function get() {
         $question = Boards::orderBy('created_at','desc')->paginate(15);
         return $question;
-
         //return $question->items()[0]->getAttributes();
         //dump($question->items()[0]->getAttributeValue('tags'));
         //dump($question->items()[0]);

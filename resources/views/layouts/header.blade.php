@@ -22,6 +22,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="fa fa-user"></span> @lang('menu.signup')</a></li>
             <li><a href="#"><span class="fa fa-sign-in"></span> @lang('menu.login')</a></li>
+            <li><a href="/question/region"  class="modal-link"><i class="fa fa-globe" aria-hidden="true"> {{ LaravelLocalization::getCurrentLocaleName()  }}</i> <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
         </ul>
         <form class="form-inline navbar-right my-2 my-lg-0 visible-lg top-search-form">
             <input class="form-control mr-sm-2 top-search-text" type="text" placeholder="Search">
