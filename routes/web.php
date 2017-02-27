@@ -12,9 +12,6 @@
 */
 
 
-
-
-
 // For locale set
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localize' ] ], function () {
     Route::get('/', 'FrontController@index');
