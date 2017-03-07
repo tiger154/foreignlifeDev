@@ -167,8 +167,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Flc\Regions\RegionsServiceProvider::class,
 
-        //
 
         /*
          * Application Service Providers...
@@ -181,6 +181,7 @@ return [
         //Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalizationServiceProvider::class,
         Torann\GeoIP\GeoIPServiceProvider::class,
+
 
     ],
 
