@@ -27,7 +27,7 @@
             <h5 class="modal-region-title ">Region</h5>
             <div class="modal-region-list">
                 <div class="btn btn-default modal-region-item col-xs-6">
-                    <span class="flag-icon flag-icon-ie"></span>Ireland
+                    <a href=""><span class="flag-icon flag-icon-ie"></span>Ireland</a>
                 </div>
                 <div class="btn btn-default modal-region-item col-xs-6">
                     <span class="flag-icon flag-icon-gb"></span>England
@@ -41,10 +41,10 @@
             <h5 class="modal-language-title">Language</h5>
             <div class="modal-region-list">
                 <div class="btn btn-default modal-language-item col-xs-6">
-                    <span class="flag-icon flag-icon-gb"></span> English
+                    <a href="{{ LaravelLocalization::getLocalizedURL('en','/') }}"><span class="flag-icon flag-icon-gb"></span> English</a>
                 </div>
                 <div class="btn btn-default modal-language-item col-xs-6">
-                    <span class="flag-icon flag-icon-kr"></span> Korean
+                    <a href="{{ LaravelLocalization::getLocalizedURL('ko','/') }}"><span class="flag-icon flag-icon-kr"></span> Korean</a>
                 </div>
             </div>
         </div>
