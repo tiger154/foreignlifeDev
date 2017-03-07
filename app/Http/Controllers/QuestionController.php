@@ -5,6 +5,7 @@ namespace foreignlifeDev\Http\Controllers;
 use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Redirect;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class QuestionController extends Controller
@@ -35,11 +36,11 @@ class QuestionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $region)
     {
         $data = $request->only(['title','content','tags']);
         $board = Boards::create($data);
-        return redirect()->route('question.index');
+        return \Redirect::route('question.index',$region);
     }
 
     /**
@@ -48,7 +49,7 @@ class QuestionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($region, $id)
     {
         $question = Boards::find($id);
         if (is_null($question)) {
@@ -63,7 +64,7 @@ class QuestionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($region, $id)
     {
         $question = Boards::find($id);
         if (is_null($question)) {
@@ -79,12 +80,12 @@ class QuestionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $region, $id)
     {
         $data = $request->only('title','content','tags');
         $board = Boards::find($id);
         $board->update($data);
-        return \Redirect::route('question.index');
+        return \Redirect::route('question.index',$region);
     }
 
     /**
@@ -93,7 +94,7 @@ class QuestionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($region, $id)
     {
         //
     }

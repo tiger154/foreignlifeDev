@@ -41,10 +41,10 @@
             <h5 class="modal-language-title">Language</h5>
             <div class="modal-region-list">
                 <div class="btn btn-default modal-language-item col-xs-6">
-                    <a href="{{ LaravelLocalization::getLocalizedURL('en','/') }}"><span class="flag-icon flag-icon-gb"></span> English</a>
+                    <a href="{{ LaravelLocalization::getLocalizedURLShowDefaultLocale('en','/') }}"><span class="flag-icon flag-icon-gb"></span> English</a>
                 </div>
                 <div class="btn btn-default modal-language-item col-xs-6">
-                    <a href="{{ LaravelLocalization::getLocalizedURL('ko','/') }}"><span class="flag-icon flag-icon-kr"></span> Korean</a>
+                    <a href="{{ LaravelLocalization::getLocalizedURLShowDefaultLocale('ko','/') }}"><span class="flag-icon flag-icon-kr"></span> Korean</a>
                 </div>
             </div>
         </div>
