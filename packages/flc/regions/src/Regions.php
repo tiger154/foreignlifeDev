@@ -121,20 +121,32 @@ class Regions {
         $this->request = $this->app['request'];
         $this->url = $this->app['url'];
         $this->currentRegionGeo = $this->getGeoLocation();
-        // set default locale
+        // set default region
         $this->defaultRegion = $this->configRepository->get('region.region');
         $supportedRegions = $this->getSupportedRegions();
+
+        // check real ip base country code
         if (empty($supportedRegions[$this->getRegionCodeFromCurrentGeoLocation()])) {
-            throw new Exception('Laravel default region is not in the supportedRegions array.');
+            // check sub domain base country code
+            if(empty($supportedRegions[$this->getSubDomain()])) {
+                throw new Exception('Laravel default region is not in the supportedRegions array.');
+            }
         }
     }
 
-
+    /**
+     * get subdomain. It should added to Route class
+     * @return mixed
+     */
     public function getSubDomain() {
         $server = explode('.', $this->request->server('HTTP_HOST'));
         return $server[0];
     }
 
+    /**
+     * get country code by IP
+     * @return mixed
+     */
     public function getRegionCodeFromCurrentGeoLocation() {
         return $this->currentRegionGeo->iso_code;
     }
