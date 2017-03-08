@@ -21,55 +21,22 @@ Route::group([
     , function () {
     Route::get('/', 'FrontController@index');
 
-
     /*
     Route::get('/', function(){
+        //#################### need to go to middle ware
         $regions = app('laravelregions');
-        $regions->getSupportedRegions();
+        $supportedRegions = $regions->getSupportedRegions();
+        // #1. check geoLocation iso code by IP
+        $geo = $regions->getGeoLocation();
+        // #2. Find if there is matched config value.
+        if (array_has($supportedRegions, $geo->iso_code)) {
+            $region = config('region.supportedRegions.'.$geo->iso_code);
+            dump($region['sub_domain']);
+            // redirect to subdomain
+        }
         exit;
     });
-
-
-
-            Route::get('/', function() {
-
-
-                // #1. Merge config
-                $regionConfigFile = config_path().'/region.php';
-                //$this->mergeConfigFrom(
-               //     $regionConfigFile, 'laravelregions'
-               // );
-                $app = app();
-                $key = 'laravelregions';
-                $path = $regionConfigFile;
-                $config = $app['config']->get($key, []);
-                $app['config']->set($key, array_merge(require $path, $config));
-
-
-                // #2. check country iso code by IP
-                $ip = $_SERVER['REMOTE_ADDR'];
-                $ip = (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) ? $ip : file_get_contents("http://ipecho.net/plain");
-                // Extract Location object
-                $geo = geoip($ip);
-
-                // #3. Find if there is matched config value.
-                if (array_has(config('laravelregions.supportedRegions'), $geo->iso_code)){
-
-                    $region = config('region.supportedRegions.'.$geo->iso_code);
-                    dump($region['sub_domain']);
-                    // redirect to subdomain
-                } else {
-                    // don't do anything.
-                }
-                //echo $subdomain;
-                exit;
-
-
-
-    });
-   */
-
-
+    */
     Route::match(['get','post'],'/question/get','QuestionController@get');
     Route::get('/question/region', function() {
         $title = 'Region&Language Setting';

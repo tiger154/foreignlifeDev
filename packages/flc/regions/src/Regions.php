@@ -97,6 +97,8 @@ class Regions {
     protected $routeName;
 
 
+    const CHECK_REAL_IP_URL = 'http://ipecho.net/plain';
+
     /**
      * Creates new instance.
      *
@@ -122,16 +124,28 @@ class Regions {
         }
     }
 
+
+    /**
+     * Return Location by real IP
+     *
+     * @return array
+     */
+    public function getGeoLocation() {
+        $ip = $this->request->server('REMOTE_ADDR');
+        $ip = (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) ? $ip : file_get_contents(self::CHECK_REAL_IP_URL);
+        $geo = geoip($ip);
+        return $geo;
+    }
+
     /**
      * Return an array of all supported Regions.
      *
-     * @throws SupportedLocalesNotDefined
+     * @throws Exception
      *
      * @return array
      */
     public function getSupportedRegions()
     {
-
 
         if (!empty($this->supportedRegions)) {
             return $this->supportedRegions;
