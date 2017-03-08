@@ -16,7 +16,7 @@
 Route::group([
         'prefix' => LaravelLocalization::setLocale()
       , 'domain' => '{region}.foreignlife.com'
-      , 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect']
+      , 'middleware' => [ 'localeCookieRedirect', 'localizationRedirect']
     ]
     , function () {
     //Route::get('/', 'FrontController@index');

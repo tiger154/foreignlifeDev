@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
         // locale middleware : s
         'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
-        'localeSessionRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleSessionRedirect::class
+        'localeSessionRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleSessionRedirect::class,
+        'localeCookieRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleCookieRedirect::class
     ];
 }

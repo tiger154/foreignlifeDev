@@ -2,7 +2,12 @@
 
 namespace foreignlifeDev\Models;
 
+use Flc\Regions\Facades\Regions;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 class Boards extends Model
 {
@@ -16,7 +21,7 @@ class Boards extends Model
     }
 
     public function getLinkAttribute() {
-        return '/question/'.$this->id;
+        return URL::route('question.show',['region'=>Regions::getSubdomain(),'id'=>$this->id]);
     }
 
     public function getVotesAttribute() {
