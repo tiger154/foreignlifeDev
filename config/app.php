@@ -235,6 +235,7 @@ return [
         //'LaravelLocalization'  => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
         'LaravelLocalization'  => foreignlifeDev\app\Libraries\FlLocalization\Facades\LaravelLocalization::class,
         'GeoIP' => Torann\GeoIP\Facades\GeoIP::class,
+        'Regions' =>Flc\Regions\Facades\Regions::class,
     ],
 
 ];

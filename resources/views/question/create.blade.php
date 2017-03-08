@@ -12,7 +12,7 @@
 @section('question.content')
     @include('question.nav')
     <div class="row question-form-container">
-        {!! Form::open(array('route' => array('question.store',LaravelLocalization::getCurrentLocale()))) !!}
+        {!! Form::open(array('route' => array('question.store',Regions::getSubDomain()))) !!}
             <div class="form-group">
                <label for="titleTextInput">TITLE</label>
                <input type="text" name="title" class="form-control" id="title" aria-describedby="title" placeholder="Enter title">

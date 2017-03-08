@@ -76,11 +76,17 @@ class Regions {
     protected $supportedRegions;
 
     /**
-     * Current locale.
+     * Current region.
      *
      * @var string
      */
     protected $currentRegion = false;
+
+    /**
+     * Current Geo Location
+     * @var Location
+     */
+    protected $currentRegionGeo = false;
 
     /**
      * An array that contains all routes that should be translated.
@@ -114,16 +120,24 @@ class Regions {
         $this->router = $this->app['router'];
         $this->request = $this->app['request'];
         $this->url = $this->app['url'];
-
+        $this->currentRegionGeo = $this->getGeoLocation();
         // set default locale
         $this->defaultRegion = $this->configRepository->get('region.region');
         $supportedRegions = $this->getSupportedRegions();
-
-        if (empty($supportedRegions[$this->defaultRegion])) {
+        if (empty($supportedRegions[$this->getRegionCodeFromCurrentGeoLocation()])) {
             throw new Exception('Laravel default region is not in the supportedRegions array.');
         }
     }
 
+
+    public function getSubDomain() {
+        $server = explode('.', $this->request->server('HTTP_HOST'));
+        return $server[0];
+    }
+
+    public function getRegionCodeFromCurrentGeoLocation() {
+        return $this->currentRegionGeo->iso_code;
+    }
 
     /**
      * Return Location by real IP
