@@ -102,13 +102,18 @@ class Regions {
      */
     protected $routeName;
 
+    protected $supportedSubDomain = ['www','dev'];
 
-    const CHECK_REAL_IP_URL = 'http://ipecho.net/plain';
+    /**
+     * To get real IP address
+     */
+    const CHECK_REAL_IP_URL = 'https://api.ipify.org';
+    //const CHECK_REAL_IP_URL = 'http://ipecho.net/plain';  // it's not stable
 
     /**
      * Creates new instance.
      *
-     * @throws UnsupportedLocaleException
+     * @throws Exception
      */
     public function __construct()
     {
@@ -123,15 +128,26 @@ class Regions {
         $this->currentRegionGeo = $this->getGeoLocation();
         // set default region
         $this->defaultRegion = $this->configRepository->get('region.region');
-        $supportedRegions = $this->getSupportedRegions();
+        $this->isSupportedRegionOrSubDomain();
+    }
 
-        // check real ip base country code
-        if (empty($supportedRegions[$this->getRegionCodeFromCurrentGeoLocation()])) {
-            // check sub domain base country code
-            if(empty($supportedRegions[$this->getSubDomain()])) {
-                throw new Exception('Laravel default region is not in the supportedRegions array.');
-            }
+
+    public function subDomainAndRegionMatched() {
+        return ($this->getSubDomain() == $this->getRegionCodeFromCurrentGeoLocation());
+    }
+
+
+    //www,dev,gb,ko,ie -> okay
+    public function isSupportedRegionOrSubDomain() {
+        $supportedRegions = $this->getSupportedRegions();
+        if (!empty($supportedRegions[strtoupper($this->getSubDomain())]) || in_array($this->getSubDomain(), $this->supportedSubDomain)) {
+            return true;
         }
+        throw new Exception('Laravel default region is not in the supportedRegions array. or not supported subdomain');
+    }
+
+    public function getSupportedSubDomain() {
+        return $this->supportedSubDomain;
     }
 
     /**

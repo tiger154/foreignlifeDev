@@ -51,10 +51,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \foreignlifeDev\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        // locale middleware : s
+        // locale middleware
         'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
         'localeSessionRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleSessionRedirect::class,
-        'localeCookieRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleCookieRedirect::class
+        'localeCookieRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleCookieRedirect::class,
+        // region middleware
+        'regionRedirect' => \Flc\Regions\Middleware\RegionRedirect::class
     ];
 }

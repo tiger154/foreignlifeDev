@@ -19,26 +19,8 @@ Route::group([
       , 'middleware' => [ 'localeCookieRedirect', 'localizationRedirect']
     ]
     , function () {
-    //Route::get('/', 'FrontController@index');
-    Route::get('/', function($region){
-        // if dev
-        if ($region == 'dev' || $region == 'www') {
-            //#################### need to go to middle ware
-            $regions = app('laravelregions');
-            $supportedRegions = $regions->getSupportedRegions();
-            // #1. check geoLocation iso code by IP
-            $geo = $regions->getGeoLocation();
-            // #2. Find if there is matched config value.
-            if (array_has($supportedRegions, $geo->iso_code)) {
-                $region = config('region.supportedRegions.'.$geo->iso_code);
-                // redirect to subdomain
-                return app('redirect')->route('front',['region' => $region['sub_domain']]);
-            }
-        }
-        return view('front.index', ['number' => 123]);
-    })->name('front');
-
-    Route::match(['get','post'],'/question/get','QuestionController@get');
+    Route::get('/', 'FrontController@index')->name('front')->middleware('regionRedirect');
+    Route::match(['get','post'],'/question/get','QuestionController@get')->name('question.get');
     Route::get('/question/region', function() {
         $title = 'Region&Language Setting';
         return view('region.view', compact('title'));
