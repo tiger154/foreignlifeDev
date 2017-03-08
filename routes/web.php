@@ -24,7 +24,7 @@ Route::group([
     Route::get('/question/region', function() {
         $title = 'Region&Language Setting';
         return view('region.view', compact('title'));
-    });
+    })->name('question.region');
     Route::resource('question','QuestionController');
 });
 
