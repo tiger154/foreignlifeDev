@@ -16,16 +16,16 @@
 Route::group([
         'prefix' => LaravelLocalization::setLocale()
       , 'domain' => '{region}.foreignlife.com'
-      , 'middleware' => [ 'localeCookieRedirect', 'localizationRedirect']
+      , 'middleware' => [ 'regionRedirect', 'localeCookieRedirect', 'localizationRedirect']
     ]
     , function () {
-    Route::get('/', 'FrontController@index')->name('front')->middleware('regionRedirect');
-    Route::match(['get','post'],'/question/get','QuestionController@get')->name('question.get');
-    Route::get('/question/region', function() {
-        $title = 'Region&Language Setting';
-        return view('region.view', compact('title'));
-    })->name('question.region');
-    Route::resource('question','QuestionController');
+        Route::get('/', 'FrontController@index')->name('front');
+        Route::match(['get','post'],'/question/get','QuestionController@get')->name('question.get');
+        Route::get('/question/region', function() {
+            $title = 'Region&Language Setting';
+            return view('region.view', compact('title'));
+        })->name('question.region');
+        Route::resource('question','QuestionController');
 });
 
 

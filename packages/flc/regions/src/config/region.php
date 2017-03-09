@@ -27,7 +27,8 @@ return [
     | Default region. region can be also sub-domain name
     | If access to www | dev. region is empty. later it will be more likely about company
     */
-    'region' => 'GB'
+    'region' => 'GB',
 
+    'realIP' => false
 
 ];

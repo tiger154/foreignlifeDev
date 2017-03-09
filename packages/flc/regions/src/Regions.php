@@ -132,6 +132,34 @@ class Regions {
     }
 
 
+    /**
+     * Set config region as well
+     *
+     * @param $region
+     */
+    public function setRegion($region) {
+        config('region.region', $region);
+        $this->setCurrentRegion($region);
+    }
+
+    public function setCurrentRegion($region) {
+        $this->currentRegion = $region;
+    }
+
+    public function getCurrentRegion() {
+        return $this->currentRegion;
+    }
+
+
+    /**
+     * 1. If subdomain and region is not matched
+     * 2. If it's supported sub-domain(www, dev)
+     * @return bool
+     */
+    public function shouldRedirect(){
+        return (!$this->subDomainAndRegionMatched() && ($this->isSupportedSubDomain()));
+    }
+
     public function subDomainAndRegionMatched() {
         return ($this->getSubDomain() == $this->getRegionCodeFromCurrentGeoLocation());
     }
@@ -146,6 +174,16 @@ class Regions {
         throw new Exception('Laravel default region is not in the supportedRegions array. or not supported subdomain');
     }
 
+    /**
+     * check sub-domain is supported ex) www, dev
+     *
+     * @return bool
+     */
+    public function isSupportedSubDomain() {
+        return (in_array($this->getSubDomain(), $this->supportedSubDomain));
+    }
+
+
     public function getSupportedSubDomain() {
         return $this->supportedSubDomain;
     }
@@ -157,6 +195,18 @@ class Regions {
     public function getSubDomain() {
         $server = explode('.', $this->request->server('HTTP_HOST'));
         return $server[0];
+    }
+
+    public function buildSubDomainUrl($subDomain = null, $uri = null) {
+        $protocol = stripos(app('request')->server('SERVER_PROTOCOL'),'https') === true ? 'https://' : 'http://';
+        $domain = (!is_null($subDomain)) ? $subDomain.config('session.domain') : app('request')->server('SERVER_NAME');
+        $port = (app('request')->server('SERVER_PORT') == "80") ? "" : ":".app('request')->server('SERVER_PORT');
+        $host = explode(":",app('request')->server('HTTP_HOST'));
+        if (count($host) > 1) {
+            $port = ':'.$host[1];
+        }
+        $request_uri = (is_null($uri)) ? app('request')->server('REQUEST_URI') : $uri;
+        return $protocol.$domain.$port.$request_uri;
     }
 
     /**
@@ -174,7 +224,9 @@ class Regions {
      */
     public function getGeoLocation() {
         $ip = $this->request->server('REMOTE_ADDR');
-        $ip = (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) ? $ip : file_get_contents(self::CHECK_REAL_IP_URL);
+        if (config('region.realIP')) {
+            $ip = (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) ? $ip : file_get_contents(self::CHECK_REAL_IP_URL);
+        }
         $geo = geoip($ip);
         return $geo;
     }

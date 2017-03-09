@@ -10,14 +10,14 @@ return [
    |
    */
     'supportedRegions' => [
-        'KR' => ['name' => 'South Korea', 'native' => '대한민국', 'sub_domain' => 'kr'],
-        'GB' => ['name' => 'United Kingdom', 'native' => 'United Kingdom', 'sub_domain' => 'gb'],
-        'IE' => ['name' => 'Ireland', 'native' => 'Ireland', 'sub_domain' => 'ie'],
-        //'JP' => ['name' => 'Japan', 'native' => '日本', 'sub_domain' => 'jp'],
-        //'CN' => ['name' => 'China', 'native' => '中国', 'sub_domain' => 'cn'],
-        //'US' => ['name' => 'United States of America', 'native' => 'United States of America', 'sub_domain' => 'us'],
-        //'CA' => ['name' => 'Canada', 'native' => 'Canada', 'sub_domain' => 'ca'],
-        //'AU' => ['name' => 'Australia', 'native' => 'Australia', 'sub_domain' => 'au'],
+        'KR' => ['name' => 'South Korea', 'native' => '대한민국', 'sub_domain' => 'kr', 'key' => 'KR'],
+        'GB' => ['name' => 'United Kingdom', 'native' => 'United Kingdom', 'sub_domain' => 'gb', 'key' => 'GB'],
+        'IE' => ['name' => 'Ireland', 'native' => 'Ireland', 'sub_domain' => 'ie', 'key' => 'IE'],
+        //'JP' => ['name' => 'Japan', 'native' => '日本', 'sub_domain' => 'jp', 'key' => 'JP'],
+        //'CN' => ['name' => 'China', 'native' => '中国', 'sub_domain' => 'cn', 'key' => 'CN'],
+        //'US' => ['name' => 'United States of America', 'native' => 'United States of America', 'sub_domain' => 'us', 'key' => 'US'],
+        //'CA' => ['name' => 'Canada', 'native' => 'Canada', 'sub_domain' => 'ca', 'key' => 'CA'],
+        //'AU' => ['name' => 'Australia', 'native' => 'Australia', 'sub_domain' => 'au', 'key' => 'AU'],
     ],
     /*
     |--------------------------------------------------------------------------
@@ -27,7 +27,17 @@ return [
     | Default region. region can be also sub-domain name
     | If access to www | dev. region is empty. later it will be more likely about company
     */
-    'region' => 'GB'
+    'region' => 'GB',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application default region
+    |--------------------------------------------------------------------------
+    |
+    | If it's true it check users real IP even thought it's internal IP
+    |
+    */
+    'realIP' => false
 
 
 ];

@@ -2,6 +2,7 @@
 
 namespace foreignlifeDev\Http\Controllers;
 
+use Flc\Regions\Facades\Regions;
 use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
