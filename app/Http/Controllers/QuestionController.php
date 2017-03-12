@@ -2,12 +2,9 @@
 
 namespace foreignlifeDev\Http\Controllers;
 
-use Flc\Regions\Facades\Regions;
 use foreignlifeDev\Models\Boards;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Redirect;
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
 
 class QuestionController extends Controller
 {
@@ -39,6 +36,7 @@ class QuestionController extends Controller
      */
     public function store(Request $request, $region)
     {
+
         $data = $request->only(['title','content','tags']);
         $board = Boards::create($data);
         return \Redirect::route('question.index',$region);
