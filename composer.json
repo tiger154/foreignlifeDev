@@ -26,7 +26,7 @@
             "database"
         ],
         "psr-4": {
-            "foreignlifeDev\\": "app/",
+            "sinbie\\": "app/",
             "Flc\\Regions\\": "packages/flc/regions/src"
         }
     },

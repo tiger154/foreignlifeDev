@@ -173,13 +173,13 @@ return [
         /*
          * Application Service Providers...
          */
-        foreignlifeDev\Providers\AppServiceProvider::class,
-        foreignlifeDev\Providers\AuthServiceProvider::class,
-        // foreignlifeDev\Providers\BroadcastServiceProvider::class,
-        foreignlifeDev\Providers\EventServiceProvider::class,
-        foreignlifeDev\Providers\RouteServiceProvider::class,
+        sinbie\Providers\AppServiceProvider::class,
+        sinbie\Providers\AuthServiceProvider::class,
+        // sinbie\Providers\BroadcastServiceProvider::class,
+        sinbie\Providers\EventServiceProvider::class,
+        sinbie\Providers\RouteServiceProvider::class,
         //Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
-        foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalizationServiceProvider::class,
+        sinbie\app\Libraries\FlLocalization\LaravelLocalizationServiceProvider::class,
         Torann\GeoIP\GeoIPServiceProvider::class,
 
 
@@ -233,7 +233,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         //'LaravelLocalization'  => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
-        'LaravelLocalization'  => foreignlifeDev\app\Libraries\FlLocalization\Facades\LaravelLocalization::class,
+        'LaravelLocalization'  => sinbie\app\Libraries\FlLocalization\Facades\LaravelLocalization::class,
         'GeoIP' => Torann\GeoIP\Facades\GeoIP::class,
         'Regions' =>Flc\Regions\Facades\Regions::class,
     ],

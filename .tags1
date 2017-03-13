@@ -4,17 +4,17 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-PostsController	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^class PostsController extends Controller$/;"	class	line:8
-index	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function index()$/;"	function	line:15
-posts	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $posts = Posts::orderBy('created_at','desc')->paginate(3);$/;"	variable	line:17
-create	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function create()$/;"	function	line:26
-store	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function store(Request $request)$/;"	function	line:37
-data	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $data = $request->only(['title','body']);$/;"	variable	line:39
-post	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $post = Posts::create($data);$/;"	variable	line:40
-show	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function show($id)$/;"	function	line:50
-edit	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function edit($id)$/;"	function	line:61
-post	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $post = Posts::find($id);$/;"	variable	line:63
-update	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function update(Request $request, $id)$/;"	function	line:74
-data	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $data = $request->only('title','body');$/;"	variable	line:76
-post	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^        $post = Posts::find($id);$/;"	variable	line:77
-destroy	C:\Users\Administrator\web\sites\foreignlifeDev\app\Http\Controllers\PostsController.php	/^    public function destroy($id)$/;"	function	line:88
+PostsController	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^class PostsController extends Controller$/;"	class	line:8
+index	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function index()$/;"	function	line:15
+posts	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $posts = Posts::orderBy('created_at','desc')->paginate(3);$/;"	variable	line:17
+create	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function create()$/;"	function	line:26
+store	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function store(Request $request)$/;"	function	line:37
+data	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $data = $request->only(['title','body']);$/;"	variable	line:39
+post	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $post = Posts::create($data);$/;"	variable	line:40
+show	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function show($id)$/;"	function	line:50
+edit	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function edit($id)$/;"	function	line:61
+post	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $post = Posts::find($id);$/;"	variable	line:63
+update	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function update(Request $request, $id)$/;"	function	line:74
+data	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $data = $request->only('title','body');$/;"	variable	line:76
+post	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^        $post = Posts::find($id);$/;"	variable	line:77
+destroy	C:\Users\Administrator\web\sites\sinbie\app\Http\Controllers\PostsController.php	/^    public function destroy($id)$/;"	function	line:88

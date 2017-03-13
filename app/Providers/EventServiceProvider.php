@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Providers;
+namespace sinbie\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'foreignlifeDev\Events\SomeEvent' => [
-            'foreignlifeDev\Listeners\EventListener',
+        'sinbie\Events\SomeEvent' => [
+            'sinbie\Listeners\EventListener',
         ],
     ];
 

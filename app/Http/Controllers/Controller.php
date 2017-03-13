@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Http\Controllers;
+namespace sinbie\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

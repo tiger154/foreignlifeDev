@@ -6,7 +6,7 @@
  * Time: 오후 7:25
  */
 
-namespace foreignlifeDev\Http\Controllers;
+namespace sinbie\Http\Controllers;
 
 
 class FrontController extends Controller {

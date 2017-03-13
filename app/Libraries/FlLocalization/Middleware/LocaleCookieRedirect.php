@@ -1,5 +1,5 @@
 <?php
-namespace foreignlifeDev\app\Libraries\FlLocalization\Middleware;
+namespace sinbie\app\Libraries\FlLocalization\Middleware;
 
 use Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect as BaseLocaleCookieRedirect;
 use Closure;

@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Http\Middleware;
+namespace sinbie\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

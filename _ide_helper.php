@@ -1244,7 +1244,7 @@ namespace Illuminate\Support\Facades {
         public static function handle($input, $output = null)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \foreignlifeDev\Console\Kernel::handle($input, $output);
+            return \sinbie\Console\Kernel::handle($input, $output);
         }
         
         /**
@@ -1258,7 +1258,7 @@ namespace Illuminate\Support\Facades {
         public static function terminate($input, $status)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \foreignlifeDev\Console\Kernel::terminate($input, $status);
+            \sinbie\Console\Kernel::terminate($input, $status);
         }
         
         /**
@@ -1272,7 +1272,7 @@ namespace Illuminate\Support\Facades {
         public static function command($signature, $callback)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \foreignlifeDev\Console\Kernel::command($signature, $callback);
+            return \sinbie\Console\Kernel::command($signature, $callback);
         }
         
         /**
@@ -1285,7 +1285,7 @@ namespace Illuminate\Support\Facades {
         public static function registerCommand($command)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \foreignlifeDev\Console\Kernel::registerCommand($command);
+            \sinbie\Console\Kernel::registerCommand($command);
         }
         
         /**
@@ -1299,7 +1299,7 @@ namespace Illuminate\Support\Facades {
         public static function call($command, $parameters = array())
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \foreignlifeDev\Console\Kernel::call($command, $parameters);
+            return \sinbie\Console\Kernel::call($command, $parameters);
         }
         
         /**
@@ -1313,7 +1313,7 @@ namespace Illuminate\Support\Facades {
         public static function queue($command, $parameters = array())
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \foreignlifeDev\Console\Kernel::queue($command, $parameters);
+            \sinbie\Console\Kernel::queue($command, $parameters);
         }
         
         /**
@@ -1325,7 +1325,7 @@ namespace Illuminate\Support\Facades {
         public static function all()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \foreignlifeDev\Console\Kernel::all();
+            return \sinbie\Console\Kernel::all();
         }
         
         /**
@@ -1337,7 +1337,7 @@ namespace Illuminate\Support\Facades {
         public static function output()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            return \foreignlifeDev\Console\Kernel::output();
+            return \sinbie\Console\Kernel::output();
         }
         
         /**
@@ -1349,7 +1349,7 @@ namespace Illuminate\Support\Facades {
         public static function bootstrap()
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \foreignlifeDev\Console\Kernel::bootstrap();
+            \sinbie\Console\Kernel::bootstrap();
         }
         
         /**
@@ -1362,7 +1362,7 @@ namespace Illuminate\Support\Facades {
         public static function setArtisan($artisan)
         {
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
-            \foreignlifeDev\Console\Kernel::setArtisan($artisan);
+            \sinbie\Console\Kernel::setArtisan($artisan);
         }
         
     }         
@@ -1520,7 +1520,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the currently authenticated user.
          *
-         * @return \foreignlifeDev\User|null 
+         * @return \sinbie\User|null 
          * @static 
          */
         public static function user()
@@ -1633,7 +1633,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param mixed $id
          * @param bool $remember
-         * @return \foreignlifeDev\User|false 
+         * @return \sinbie\User|false 
          * @static 
          */
         public static function loginUsingId($id, $remember = false)
@@ -1645,7 +1645,7 @@ namespace Illuminate\Support\Facades {
          * Log the given user ID into the application without sessions or cookies.
          *
          * @param mixed $id
-         * @return \foreignlifeDev\User|false 
+         * @return \sinbie\User|false 
          * @static 
          */
         public static function onceUsingId($id)
@@ -1748,7 +1748,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Return the currently cached user.
          *
-         * @return \foreignlifeDev\User|null 
+         * @return \sinbie\User|null 
          * @static 
          */
         public static function getUser()
@@ -1794,7 +1794,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the last user we attempted to authenticate.
          *
-         * @return \foreignlifeDev\User 
+         * @return \sinbie\User 
          * @static 
          */
         public static function getLastAttempted()
@@ -1838,7 +1838,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Determine if the current user is authenticated.
          *
-         * @return \foreignlifeDev\User 
+         * @return \sinbie\User 
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */
@@ -12073,7 +12073,7 @@ namespace Collective\Html {
     }         
 }
     
-namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
+namespace sinbie\app\Libraries\FlLocalization\Facades {
 
     class LaravelLocalization {
         
@@ -12084,7 +12084,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
          */
         public static function getLocalizedURLShowDefaultLocale($locale = null, $url = null, $attributes = array())
         {
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURLShowDefaultLocale($locale, $url, $attributes);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURLShowDefaultLocale($locale, $url, $attributes);
         }
         
         /**
@@ -12097,7 +12097,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function setLocale($locale = null)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::setLocale($locale);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::setLocale($locale);
         }
         
         /**
@@ -12109,7 +12109,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function setSupportedLocales($locales)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::setSupportedLocales($locales);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::setSupportedLocales($locales);
         }
         
         /**
@@ -12124,7 +12124,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function localizeURL($url = null, $locale = null)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::localizeURL($url, $locale);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::localizeURL($url, $locale);
         }
         
         /**
@@ -12141,7 +12141,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getLocalizedURL($locale = null, $url = null, $attributes = array())
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURL($locale, $url, $attributes);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURL($locale, $url, $attributes);
         }
         
         /**
@@ -12158,7 +12158,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getURLFromRouteNameTranslated($locale, $transKeyName, $attributes = array())
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getURLFromRouteNameTranslated($locale, $transKeyName, $attributes);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getURLFromRouteNameTranslated($locale, $transKeyName, $attributes);
         }
         
         /**
@@ -12172,7 +12172,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getNonLocalizedURL($url = null)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getNonLocalizedURL($url);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getNonLocalizedURL($url);
         }
         
         /**
@@ -12184,7 +12184,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getDefaultLocale()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getDefaultLocale();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getDefaultLocale();
         }
         
         /**
@@ -12197,7 +12197,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getSupportedLocales()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getSupportedLocales();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getSupportedLocales();
         }
         
         /**
@@ -12210,7 +12210,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getLocalesOrder()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getLocalesOrder();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getLocalesOrder();
         }
         
         /**
@@ -12222,7 +12222,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleName()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleName();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleName();
         }
         
         /**
@@ -12234,7 +12234,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleNative()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleNative();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleNative();
         }
         
         /**
@@ -12246,7 +12246,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleDirection()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleDirection();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleDirection();
         }
         
         /**
@@ -12258,7 +12258,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleScript()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleScript();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleScript();
         }
         
         /**
@@ -12270,7 +12270,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleNativeReading()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleNativeReading();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleNativeReading();
         }
         
         /**
@@ -12282,7 +12282,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocale()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocale();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocale();
         }
         
         /**
@@ -12294,7 +12294,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getCurrentLocaleRegional()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleRegional();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getCurrentLocaleRegional();
         }
         
         /**
@@ -12306,7 +12306,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getSupportedLanguagesKeys()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getSupportedLanguagesKeys();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getSupportedLanguagesKeys();
         }
         
         /**
@@ -12320,7 +12320,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function checkLocaleInSupportedLocales($locale)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::checkLocaleInSupportedLocales($locale);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::checkLocaleInSupportedLocales($locale);
         }
         
         /**
@@ -12332,7 +12332,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function setRouteName($routeName)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::setRouteName($routeName);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::setRouteName($routeName);
         }
         
         /**
@@ -12345,7 +12345,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function transRoute($routeName)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::transRoute($routeName);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::transRoute($routeName);
         }
         
         /**
@@ -12358,7 +12358,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getRouteNameFromAPath($path)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getRouteNameFromAPath($path);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getRouteNameFromAPath($path);
         }
         
         /**
@@ -12370,7 +12370,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function getConfigRepository()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::getConfigRepository();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getConfigRepository();
         }
         
         /**
@@ -12382,7 +12382,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function hideDefaultLocaleInURL()
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::hideDefaultLocaleInURL();
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::hideDefaultLocaleInURL();
         }
         
         /**
@@ -12395,7 +12395,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function createUrlFromUri($uri)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::createUrlFromUri($uri);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::createUrlFromUri($uri);
         }
         
         /**
@@ -12407,7 +12407,7 @@ namespace foreignlifeDev\app\Libraries\FlLocalization\Facades {
         public static function setBaseUrl($url)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \foreignlifeDev\app\Libraries\FlLocalization\LaravelLocalization::setBaseUrl($url);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::setBaseUrl($url);
         }
         
     }         
@@ -15289,7 +15289,7 @@ if (! function_exists('with')) {
     
     class Html extends \Collective\Html\HtmlFacade {}
     
-    class LaravelLocalization extends \foreignlifeDev\app\Libraries\FlLocalization\Facades\LaravelLocalization {}
+    class LaravelLocalization extends \sinbie\app\Libraries\FlLocalization\Facades\LaravelLocalization {}
     
     class GeoIP extends \Torann\GeoIP\Facades\GeoIP {}
     

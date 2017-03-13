@@ -1,9 +1,9 @@
 <?php
 
-namespace foreignlifeDev\Http\Controllers\Auth;
+namespace sinbie\Http\Controllers\Auth;
 
-use foreignlifeDev\User;
-use foreignlifeDev\Http\Controllers\Controller;
+use sinbie\User;
+use sinbie\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

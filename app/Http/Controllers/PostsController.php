@@ -1,9 +1,9 @@
 <?php
 
-namespace foreignlifeDev\Http\Controllers;
+namespace sinbie\Http\Controllers;
 
 use Illuminate\Http\Request;
-use foreignlifeDev\Posts;
+use sinbie\Posts;
 
 class PostsController extends Controller
 {

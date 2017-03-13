@@ -8,9 +8,9 @@
  */
 
 
-namespace foreignlifeDev\Models{
+namespace sinbie\Models{
 /**
- * foreignlifeDev\Models\Boards
+ * sinbie\Models\Boards
  *
  * @property int $id
  * @property string $title
@@ -22,37 +22,37 @@ namespace foreignlifeDev\Models{
  * @property-read mixed $link
  * @property-read mixed $views
  * @property-read mixed $votes
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereContent($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereTags($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Models\Boards whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereContent($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereTags($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereTitle($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Boards whereUpdatedAt($value)
  */
 	class Boards extends \Eloquent {}
 }
 
-namespace foreignlifeDev{
+namespace sinbie{
 /**
- * foreignlifeDev\Posts
+ * sinbie\Posts
  *
  * @property int $id
  * @property string $title
  * @property string $body
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Posts whereBody($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Posts whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Posts whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Posts whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\Posts whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Posts whereBody($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Posts whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Posts whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Posts whereTitle($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\Posts whereUpdatedAt($value)
  */
 	class Posts extends \Eloquent {}
 }
 
-namespace foreignlifeDev{
+namespace sinbie{
 /**
- * foreignlifeDev\User
+ * sinbie\User
  *
  * @property int $id
  * @property string $name
@@ -62,13 +62,13 @@ namespace foreignlifeDev{
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereEmail($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User wherePassword($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereRememberToken($value)
- * @method static \Illuminate\Database\Query\Builder|\foreignlifeDev\User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereEmail($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereName($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User wherePassword($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereRememberToken($value)
+ * @method static \Illuminate\Database\Query\Builder|\sinbie\User whereUpdatedAt($value)
  */
 	class User extends \Eloquent {}
 }

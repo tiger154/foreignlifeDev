@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Providers;
+namespace sinbie\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'foreignlifeDev\Model' => 'foreignlifeDev\Policies\ModelPolicy',
+        'sinbie\Model' => 'sinbie\Policies\ModelPolicy',
     ];
 
     /**

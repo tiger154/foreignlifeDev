@@ -15,7 +15,7 @@
 // For locale set
 Route::group([
         'prefix' => LaravelLocalization::setLocale()
-      , 'domain' => '{region}.foreignlife.com'
+      , 'domain' => '{region}.sinbie.com'
       , 'middleware' => [ 'regionRedirect', 'localeCookieRedirect', 'localizationRedirect']
     ]
     , function () {

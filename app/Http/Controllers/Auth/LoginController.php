@@ -1,8 +1,8 @@
 <?php
 
-namespace foreignlifeDev\Http\Controllers\Auth;
+namespace sinbie\Http\Controllers\Auth;
 
-use foreignlifeDev\Http\Controllers\Controller;
+use sinbie\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller

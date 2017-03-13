@@ -1,5 +1,5 @@
 <?php
-namespace foreignlifeDev\app\Libraries\FlLocalization\Middleware;
+namespace sinbie\app\Libraries\FlLocalization\Middleware;
 
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter as BaseLaravelLocalizationRedirectFilter;
 use Closure;

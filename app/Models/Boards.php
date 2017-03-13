@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Models;
+namespace sinbie\Models;
 
 use Flc\Regions\Facades\Regions;
 use Illuminate\Database\Eloquent\Model;

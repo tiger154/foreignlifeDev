@@ -35,9 +35,9 @@
                 itemClass : 'item',
                 activeClass : 'active',
                 items: [
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'We know foreign life is not easy'},
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Find you room here'},
-                    {url:'http://dev.foreignlife.com:8000/img/slider/slider-1-long.jpg', caption:'Caption3'}
+                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'We know foreign life is not easy'},
+                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Find you room here'},
+                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Caption3'}
                 ]
             }
         },

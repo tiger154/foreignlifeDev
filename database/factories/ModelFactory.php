@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(foreignlifeDev\User::class, function (Faker\Generator $faker) {
+$factory->define(sinbie\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [

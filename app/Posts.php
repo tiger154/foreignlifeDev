@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev;
+namespace sinbie;
 
 use Illuminate\Database\Eloquent\Model;
 

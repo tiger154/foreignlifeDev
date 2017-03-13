@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Http\Middleware;
+namespace sinbie\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

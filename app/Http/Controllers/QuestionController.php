@@ -1,8 +1,8 @@
 <?php
 
-namespace foreignlifeDev\Http\Controllers;
+namespace sinbie\Http\Controllers;
 
-use foreignlifeDev\Models\Boards;
+use sinbie\Models\Boards;
 use Illuminate\Http\Request;
 
 

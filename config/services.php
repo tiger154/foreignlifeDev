@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => foreignlifeDev\User::class,
+        'model' => sinbie\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

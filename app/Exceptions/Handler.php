@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Exceptions;
+namespace sinbie\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

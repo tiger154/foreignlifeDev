@@ -1,6 +1,6 @@
 <?php
 
-namespace foreignlifeDev\Http;
+namespace sinbie\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -24,11 +24,11 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \foreignlifeDev\Http\Middleware\EncryptCookies::class,
+            \sinbie\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \foreignlifeDev\Http\Middleware\VerifyCsrfToken::class,
+            \sinbie\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
         'api' => [
@@ -49,13 +49,13 @@ class Kernel extends HttpKernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \foreignlifeDev\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \sinbie\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         // locale middleware
         'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
-        'localizationRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
-        'localeSessionRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleSessionRedirect::class,
-        'localeCookieRedirect' => \foreignlifeDev\app\Libraries\FlLocalization\Middleware\LocaleCookieRedirect::class,
+        'localizationRedirect' => \sinbie\app\Libraries\FlLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
+        'localeSessionRedirect' => \sinbie\app\Libraries\FlLocalization\Middleware\LocaleSessionRedirect::class,
+        'localeCookieRedirect' => \sinbie\app\Libraries\FlLocalization\Middleware\LocaleCookieRedirect::class,
         // region middleware
         'regionRedirect' => \Flc\Regions\Middleware\RegionRedirect::class
     ];
