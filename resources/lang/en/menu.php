@@ -9,7 +9,8 @@ return [
     |
     */
 
-    'question' => 'QnA',
+    'question' => 'Questions',
+    'tags' => 'Tags',
     'community' => 'Community',
     'rent' => 'Rent',
     'shop' => 'Shop',
