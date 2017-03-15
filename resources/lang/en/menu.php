@@ -9,7 +9,7 @@ return [
     |
     */
 
-    'question' => 'Question',
+    'question' => 'QnA',
     'community' => 'Community',
     'rent' => 'Rent',
     'shop' => 'Shop',

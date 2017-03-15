@@ -9,7 +9,7 @@ return [
     |
     */
 
-    'question' => '질문',
+    'question' => '질문/답변',
     'community' => '커뮤니티',
     'rent' => '방구하기',
     'shop' => '사고팔기',

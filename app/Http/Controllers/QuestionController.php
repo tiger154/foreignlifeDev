@@ -5,7 +5,6 @@ namespace sinbie\Http\Controllers;
 use sinbie\Models\Boards;
 use Illuminate\Http\Request;
 
-
 class QuestionController extends Controller
 {
     /**
@@ -50,6 +49,7 @@ class QuestionController extends Controller
      */
     public function show($region, $id)
     {
+
         $question = Boards::find($id);
         if (is_null($question)) {
             abort(403, 'No data found sorry');
@@ -65,6 +65,7 @@ class QuestionController extends Controller
      */
     public function edit($region, $id)
     {
+
         $question = Boards::find($id);
         if (is_null($question)) {
             abort(403, 'No data found sorry');

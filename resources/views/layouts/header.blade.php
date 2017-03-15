@@ -7,7 +7,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">ForeignLife</a>
+        <a class="navbar-brand" href="/">Sinbie</a>
         <div  class="visible-xs-block navbar-right xs-top-search"><i class="fa fa-search" aria-hidden="true"></i></div>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
@@ -16,8 +16,8 @@
             <li><a href="#about">@lang('menu.community')</a></li>
             <li><a href="#contact">@lang('menu.rent')</a></li>
             <li><a href="#contact">@lang('menu.shop')</a></li>
-            <li><a href="#contact">@lang('menu.study')</a></li>
-            <li><a href="#contact">@lang('menu.visa')</a></li>
+            <!--li><a href="#contact">@lang('menu.study')</a></li>
+            <li><a href="#contact">@lang('menu.visa')</a></li-->
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="fa fa-user"></span> @lang('menu.signup')</a></li>

@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="item-list-count">{{ item.views }}</div>
-                    <div class="item-list">views</div>
+                    <div class="item-list-header">views</div>
                 </div>
             </div>
             <div class="col-sm-9 item-list-right">
@@ -71,7 +71,7 @@
         padding: 0.8em;
     }
     .item-list-row {
-        padding: 10px;
+        padding: 3px;
         margin-bottom: 0.7em;
         background-color: white;
         box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
@@ -87,7 +87,7 @@
         text-align: left;
     }
     .item-list-count {
-        font-size: 2em;
+        font-size: 1.2em;
     }
     .item-list-title-bottom {
         margin: 1em 0 0 0;
@@ -95,6 +95,7 @@
     }
     .item-list-author {
         text-align: right;
+        font-size: 0.8em;
     }
     .item-list-tags {
         padding: 0px;
