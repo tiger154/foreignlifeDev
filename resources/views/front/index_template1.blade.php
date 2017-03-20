@@ -21,10 +21,17 @@
                     </div>
                 </div>
                 <div class="col-lg-3 no-padding">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default top-tags-box">
                         <div class="panel-heading"> Tags </div>
                         <div class="panel-body">
-                            tag tag tag
+                            <label class="label label-tag">#university</label>
+                            <label class="label label-tag">#working Visa</label>
+                            <label class="label label-tag">#london</label>
+                            <label class="label label-tag">#trip</label>
+                            <label class="label label-tag">#people</label>
+                            <label class="label label-tag">#language school</label>
+                            <label class="label label-tag">#food</label>
+                            <label class="label label-tag">#phone</label>
                         </div>
                     </div>
                 </div>

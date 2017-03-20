@@ -73,6 +73,11 @@ body {
 .ad-img img{
     width: 98%;
 }
+
+.top-tags-box {
+    text-align: left;
+}
+
 /* Carousel */
 .carousel-inner .fill img {
     display: block !important;
@@ -111,6 +116,9 @@ body {
 }
 
 /* bootstrap panel*/
+.panel {
+    border-radius: initial;
+}
 .panel-simple .item-list-row {
     border-bottom: 1px solid lightgray;
     box-shadow: none;
@@ -128,4 +136,7 @@ body {
 .panel-body.panel-simple {
     padding: 15px 15px 0 15px !important;
 }
-
+/* bootstrap label */
+.label-tag {
+    background-color: #2e95d3;
+}
