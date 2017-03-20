@@ -39,7 +39,7 @@
                 activeClass : 'active',
                 items: [
                     {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Hey New(新)bie!', img :'/img/slider/icon/earth.png'},
-                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Room', img :'/img/slider/icon/home_cool_white.png'},
+                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Room', img :'/img/slider/icon/room_cool_white.png'},
                     {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'For Sale', img :'/img/slider/icon/bag_red.png'}
                 ]
             }
