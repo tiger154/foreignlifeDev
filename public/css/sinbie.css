@@ -1,0 +1,131 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.login-input{
+    font-size: 12px !important;
+    height: initial;
+}
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+.top-search-form {
+    padding: 0.6em !important;
+}
+.top-search-text {
+    height: 2.6em !important;;
+    font-size: 12px !important;;
+    width: 20em !important;;
+}
+.top-search-submit {
+    font-size: 12px !important;;
+}
+.xs-top-search {
+    float: right;
+    position: relative;
+    margin-top: 8px;
+    font-size: 1.5em;
+    margin: 0.4em 0.6em 0 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* front */
+
+/*  front-content-layout */
+.front-content-left, .front-content-center, .front-content-right {
+    text-align: center;
+}
+.front-content-left {
+}
+.front-content-center {
+    padding-right: 0;
+}
+.front-content-right {
+
+}
+.line {
+    background-color: #000000;
+    height: 0.2em;
+    margin-bottom: 0.5em;
+}
+.line.purple {
+    background-color: #554272;
+}
+.ad {
+    background-color: white;
+    margin: 0 0 0.5em 0;
+    border: 1px solid #e9e8e6;
+    border-bottom-color: #dad7c8;
+    font-size: 12px;
+}
+.ad:hover {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.4);
+}
+.ad-img img{
+    width: 98%;
+}
+/* Carousel */
+.carousel-inner .fill img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 6em !important;
+}
+
+/* widget */
+.widget-header {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: white;
+    padding: 0.5em 0 0.5em 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    /* font-size: 18px; */
+    font-weight: bold;
+}
+
+/* bootstrap nav */
+.navbar-inverse.purple {
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #6f5499;
+}
+
+.navbar-nav > li{
+    font-size: 13px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+/* bootstrap panel*/
+.panel-simple .item-list-row {
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
+}
+.panel-simple .item-list-row:hover {
+    background-color: rgba(205, 191, 227, 0.1);
+    box-shadow: none;
+}
+
+.panel-heading {
+    background-color: rgba(170, 166, 166, 0.06) !important;
+    text-align: left !important;
+    font-weight: bold;
+}
+.panel-body.panel-simple {
+    padding: 15px 15px 0 15px !important;
+}
+

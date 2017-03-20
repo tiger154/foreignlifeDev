@@ -103,7 +103,7 @@ class QuestionController extends Controller
      * It return data
      */
     public function get() {
-        $question = Boards::orderBy('created_at','desc')->paginate(15);
+        $question = Boards::orderBy('created_at','desc')->paginate(5);
         return $question;
         //return $question->items()[0]->getAttributes();
         //dump($question->items()[0]->getAttributeValue('tags'));
