@@ -82,8 +82,8 @@ body {
 .carousel-inner .fill img {
     display: block !important;
     margin: 0 auto !important;
-    width: 10em !important;
-    padding-top: 0.5em;
+    width: 8em !important;
+    padding-top: 1em;
 }
 
 /* widget */
