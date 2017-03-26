@@ -7,7 +7,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Sinbie</a>
+        <a class="navbar-brand" href="/"><img class="logo-top" src="/img/assets/bee_alone.png"></a>
         <div  class="visible-xs-block navbar-right xs-top-search"><i class="fa fa-search" aria-hidden="true"></i></div>
       </div>
       <div id="navbar" class="collapse navbar-collapse">

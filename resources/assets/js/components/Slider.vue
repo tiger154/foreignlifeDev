@@ -38,7 +38,7 @@
                 itemClass : 'item',
                 activeClass : 'active',
                 items: [
-                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Hey New(新)bie!', img :'/img/slider/icon/earth.png'},
+                    {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Hey New(新)bie!', img :'/img/assets/bee_400.png'},
                     {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'Room', img :'/img/slider/icon/room_cool_white.png'},
                     {url:'http://dev.sinbie.com:8000/img/slider/slider-1-long.jpg', caption:'For Sale', img :'/img/slider/icon/bag_red.png'}
                 ]
@@ -69,7 +69,7 @@
     }
     .fill {
         width: 100%;
-        height: 200px;
+        height: 17em;
         background-position: contain;
         -webkit-background-size: contain;
         -moz-background-size: contain;
@@ -81,7 +81,7 @@
         margin: 50px 0;
     }
     .carousel-caption h2 {
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: bold;
         text-shadow: 2px 2px 8px #141313;
     }
