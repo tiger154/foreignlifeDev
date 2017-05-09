@@ -2,7 +2,9 @@
 
 namespace sinbie\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use DateTime;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Blade::directive('staticversion', function ($now) {
+            /*return "<?php echo ($expression)->format('m/d/Y H:i'); ?>";*/
+            return "<?php echo ($now)->format('YmdHis'); ?>";
+        });
     }
 
     /**

@@ -26,6 +26,7 @@ Route::group([
             return view('region.view', compact('title'));
         })->name('question.region');
         Route::resource('question','QuestionController');
+        Route::resource('room','RoomController');
 });
 
 

@@ -31,6 +31,30 @@ namespace sinbie\Models{
  */
 	class Boards extends \Eloquent {}
 }
+namespace sinbie\Models{
+    /**
+     * sinbie\Models\Rooms
+     *
+     * @property int $id
+     * @property string $title
+     * @property string $content
+     * @property string $tags
+     * @property \Carbon\Carbon $created_at
+     * @property \Carbon\Carbon $updated_at
+     * @property-read mixed $answers
+     * @property-read mixed $link
+     * @property-read mixed $views
+     * @property-read mixed $votes
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereContent($value)
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereCreatedAt($value)
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereId($value)
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereTags($value)
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereTitle($value)
+     * @method static \Illuminate\Database\Query\Builder|\sinbie\Models\Rooms whereUpdatedAt($value)
+     */
+    class Rooms extends \Eloquent {}
+}
+
 
 namespace sinbie{
 /**
