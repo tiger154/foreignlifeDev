@@ -23,3 +23,11 @@ So here is first plan to provide services to all users
 - Rent
 - Study
 - Sell & Buy
+
+
+## Brand story
+
+When I go to other country everytime I felt like a newbie. 
+and 'new' in Korean is Sin. so it merged two word (newbie + sin(신))
+
+Also this mered word has other meaning in Korean as 'mystique' which I felt everytime when I land other country :)  
