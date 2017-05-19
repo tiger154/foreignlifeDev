@@ -6,13 +6,20 @@ Sinbie is a web application to help all travelers in any country.
 I got an Idea while I was traveling all around of world, everytime I faced many difficulty for basic stuffs sucs as 
 Tranportation, Food, Rent, etc.
 
-I know there are some sites for instance tripadvisor, yalp, etc. but this site is not for review of some restratunts or business.
-We support forums, community, and provide proper tranlation services to give clear answer. 
+I know there are some sites for instance tripadvisor, yalp, etc. But all these type of sites are more friendly with English speakers. 
+With my experience as a Korean most of people even don't know that kind of site exist. 
+I beilieve there is some problem to give different language speakr proper experience. 
+
+Therefore our first mission is providing localized experience to each language speaker.
+And start with Korean user and England user first. 
+
+
+## Services
 
 So here is first plan to provide services to all users
 
-<p> Questions </p>
-<p> Community </p>
-<p> Rent </p>
-<p> Study </p>
-<p> Sell & Buy </p>
+- Questions
+- Community
+- Rent
+- Study
+- Sell & Buy
