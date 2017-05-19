@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.3.31 on 2017-03-26.
+ * Generated for Laravel 5.3.31 on 2017-05-19.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12133,15 +12133,16 @@ namespace sinbie\app\Libraries\FlLocalization\Facades {
          * @param string|bool $locale Locale to adapt, false to remove locale
          * @param string|false $url URL to adapt in the current language. If not passed, the current url would be taken.
          * @param array $attributes Attributes to add to the route, if empty, the system would try to extract them from the url.
+         * @param bool $forceDefaultLocation Force to show default location even hideDefaultLocaleInURL set as TRUE
          * @throws SupportedLocalesNotDefined
          * @throws UnsupportedLocaleException
          * @return string|false URL translated, False if url does not exist
          * @static 
          */
-        public static function getLocalizedURL($locale = null, $url = null, $attributes = array())
+        public static function getLocalizedURL($locale = null, $url = null, $attributes = array(), $forceDefaultLocation = false)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURL($locale, $url, $attributes);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getLocalizedURL($locale, $url, $attributes, $forceDefaultLocation);
         }
         
         /**
@@ -12150,15 +12151,16 @@ namespace sinbie\app\Libraries\FlLocalization\Facades {
          * @param string|bool $locale Locale to adapt
          * @param string $transKeyName Translation key name of the url to adapt
          * @param array $attributes Attributes for the route (only needed if transKeyName needs them)
+         * @param bool $forceDefaultLocation Force to show default location even hideDefaultLocaleInURL set as TRUE
          * @throws SupportedLocalesNotDefined
          * @throws UnsupportedLocaleException
          * @return string|false URL translated
          * @static 
          */
-        public static function getURLFromRouteNameTranslated($locale, $transKeyName, $attributes = array())
+        public static function getURLFromRouteNameTranslated($locale, $transKeyName, $attributes = array(), $forceDefaultLocation = false)
         {
             //Method inherited from \Mcamara\LaravelLocalization\LaravelLocalization            
-            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getURLFromRouteNameTranslated($locale, $transKeyName, $attributes);
+            return \sinbie\app\Libraries\FlLocalization\LaravelLocalization::getURLFromRouteNameTranslated($locale, $transKeyName, $attributes, $forceDefaultLocation);
         }
         
         /**

@@ -6,6 +6,14 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {
+    use WithoutMiddleware;
+
+    function setUp()
+    {
+        parent::setUp();
+        $this->baseUrl = 'http://dev.sinbie.com/';
+    }
+
     /**
      * A basic functional test example.
      *
@@ -13,7 +21,16 @@ class ExampleTest extends TestCase
      */
     public function testBasicExample()
     {
-        $this->visit('/')
-             ->see('Laravel');
+       $this->visit('/')
+           ->see('SINBIE');
     }
+
+    public function testQnaLink()
+    {
+        $this->visit('/')
+            ->click('header-link-question')
+            ->seePageIs('http://dev.sinbie.com/question');
+    }
+
+
 }

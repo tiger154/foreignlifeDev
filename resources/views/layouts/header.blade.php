@@ -15,8 +15,8 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="/question">@lang('menu.question')</a></li>
-            <li><a href="/question">@lang('menu.tags')</a></li>
+            <li><a href="/question" name="header-link-question">@lang('menu.question')</a></li>
+            <li><a href="/question" name="header-link-tags">@lang('menu.tags')</a></li>
             <li><a href="#about">@lang('menu.community')</a></li>
             <li><a href="#contact">@lang('menu.rent')</a></li>
             <li><a href="#contact">@lang('menu.shop')</a></li>
