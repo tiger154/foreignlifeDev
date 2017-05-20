@@ -1,4 +1,5 @@
 <p align="center"><img src="http://i66.tinypic.com/121fm6h.png" width="200px"></p>
+<p align="center"><img src="https://api.travis-ci.org/tiger154/sinbie.svg?branch=master"></p>
 
 ## About Sinbie
 
