@@ -6,11 +6,11 @@ php:
 
 before_script:
   - cp .env.travis .env
-  - mysql -e 'create database homestead_test;'
+  - mysql -e 'create database tests;'
   - composer self-update
   - composer install --no-interaction
   - php artisan key:generate
-  - php artisan migrate --database homestead_test
+  - php artisan migrate --database tests
 
 script:
   - vendor/bin/phpunit
