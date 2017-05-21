@@ -22,15 +22,16 @@ class BoardsTest extends TestCase
             'tags' => 'test1 test2'
         ];
         $board = factory(sinbie\Models\Boards::class)->create($form);
-        //dump($board->id);
-        // test getTagsAttribute
         $this->assertEquals(['test1','test2'], $board->tags);
-        //return URL::route('question.show',['region'=>Regions::getSubdomain(),'id'=>$this->id]);
-        //$this->assertEquals('',$board->link);
         $this->assertEquals(0, $board->votes);
         $this->assertEquals(0, $board->answers);
         $this->assertEquals(0, $board->views);
 
+        // test routing
+       // $this->get('/');
+       //  $subdomain = \Flc\Regions\Facades\Regions::shouldReceive('getSubdomain')->andReturn('gb');
+       //  $this->assertRedirectedToRoute('question.show',['region' => $subdomain, 'id' => $board->id]);
+       // ->assertRedirectedToRoute('question.index',['dev'])
     }
 
 
