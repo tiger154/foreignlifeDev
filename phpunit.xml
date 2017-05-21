@@ -22,11 +22,11 @@
         <!--log type="coverage-html" target="./public/code-coverage" charset="UTF-8"
              yui="true" highlight="true"
              lowUpperBound="50" highLowerBound="80" /-->
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <!--log type="coverage-clover" target="build/logs/clover.xml"/-->
     </logging>
     <php>
         <env name="APP_ENV" value="testing"/>
-        <env name="DB_CONNECTION" value="tests"/>
+        <!--env name="DB_CONNECTION" value="tests"/-->
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>

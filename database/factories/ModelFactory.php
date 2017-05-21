@@ -22,3 +22,16 @@ $factory->define(sinbie\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+/**
+ * Fake Boards
+ */
+$factory->define(sinbie\Models\Boards::class, function (Faker\Generator $faker) {
+    //['title','content','tags'
+    return [
+        'title' => $faker->title,
+        'content' => 'test Content',
+        'tags' => 'testtags'
+    ];
+});
+
