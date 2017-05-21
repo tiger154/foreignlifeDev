@@ -35,7 +35,6 @@ class QuestionController extends Controller
      */
     public function store(Request $request, $region)
     {
-
         $data = $request->only(['title','content','tags']);
         $board = Boards::create($data);
         return \Redirect::route('question.index',$region);
