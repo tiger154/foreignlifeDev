@@ -1,6 +1,6 @@
 <p align="center"><img src="http://i66.tinypic.com/121fm6h.png" width="200px"></p>
 <p align="center">
-  <img src="https://api.travis-ci.org/tiger154/sinbie.svg?branch=master">  
+  <a href="https://travis-ci.org/tiger154/sinbie"><img src="https://api.travis-ci.org/tiger154/sinbie.svg?branch=master"></a>  
   <a href='https://coveralls.io/github/tiger154/sinbie'><img src='https://coveralls.io/repos/github/tiger154/sinbie/badge.svg' alt='Coverage Status' /></a>
 
 </p>
