@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://travis-ci.org/tiger154/sinbie"><img src="https://api.travis-ci.org/tiger154/sinbie.svg?branch=master"></a>  
   <a href='https://coveralls.io/github/tiger154/sinbie'><img src='https://coveralls.io/repos/github/tiger154/sinbie/badge.svg' alt='Coverage Status' /></a>
-
+  <a href="https://scrutinizer-ci.com/g/tiger154/sinbie/"><img src="https://scrutinizer-ci.com/g/tiger154/sinbie/badges/quality-score.png?b=master"></a>
 </p>
 
 ## About Sinbie
