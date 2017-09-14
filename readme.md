@@ -24,11 +24,10 @@ And start with Korean user and England user first.
 So here is first plan to provide services to all users
 
 - Questions
-- Community
-- Rent
-- Study
 - Sell & Buy
-
+- Rent
+- Community
+- Study
 
 ## Brand story
 
